@@ -96,12 +96,11 @@ Create a .env file:
   python main.py
   ```
 
-````
-
 -Gradio will start and print a local URL: Running on
+
 ```text
 http://127.0.0.1:7860/
-````
+```
 
 ---
 
