@@ -26,79 +26,29 @@ Features
 
 ---
 
-## 🗂 Project Structure
-
-project/
-
-│
-
-├── data/
-
-│ └── bulanverse.pdf # sample document
-
-│
-
-├── notebooks/
-
-│ └── doc_test.ipynb # exploration notebook
-
-│
-
-├── src/
-
-│ ├── main.py
-
-│ ├── agent.py
-
-│ ├── document_manager.py
-
-│ ├── provider_openai.py
-
-│ ├── provider_ollama.py
-
-│ ├── utils.py
-
-│ └── init.py
-
-│
-
-├── tests/
-
-│ └── test_basic.py
-
-│
-
-├── requirements.txt
-
-├── .gitignore
-
-└── README.md
-
----
-
 ### Installation
 
 # Clone the repo
 
-git clone https://github.com/ucheorjins/doc-qa-agent.git
+- git clone https://github.com/ucheorjins/doc-qa-agent.git
 
-cd doc-qa-agent
+- cd doc-qa-agent
 
 # Create and activate virtual environment
 
-python3 -m venv .venv
+- python3 -m venv .venv
 
-source .venv/bin/activate # macOS/Linux
+- source .venv/bin/activate # macOS/Linux
 
 # Install dependencies
 
-pip install -r requirements.txt
+- pip install -r requirements.txt
 
 NB:
 
-Install Ollama separately at https://ollama.ai
+- Install Ollama separately at https://ollama.ai
 
-Put your OpenAI API key in a .env file.
+- Put your OpenAI API key in a .env file.
 
 ---
 
@@ -106,25 +56,23 @@ Put your OpenAI API key in a .env file.
 
 Create a .env file:
 
-OPENAI_API_KEY=your_key_here
+- OPENAI_API_KEY=your_key_here
 
-LLM_PROVIDER=openai # or "ollama"
+- LLM_PROVIDER= "openai" or "ollama"
 
-OLLAMA_HOST=http://localhost:11434
+- OLLAMA_HOST=http://localhost:11434
 
 ---
 
 ##### Running the App
 
-Running the App
+- cd src
 
-cd src
+- python main.py
 
-python main.py
+- Gradio will start and print a local URL:
 
-Gradio will start and print a local URL:
-
-Running on http://127.0.0.1:7860/
+- Running on http://127.0.0.1:7860/
 
 ---
 
@@ -136,13 +84,13 @@ pytest tests
 
 ###### Future Improvements
 
-Add user file upload for QA process
+- Add user file upload for QA process
 
-Add vector database support (FAISS / Chroma)
+- Add vector database support (FAISS / Chroma)
 
-Add multiple document support
+- Add multiple document support
 
-Deploy online (HuggingFace Spaces or Docker)
+- Deploy online (HuggingFace Spaces or Docker)
 
 ---
 
