@@ -77,26 +77,26 @@ NB:
 Create a .env file:
 
 ```text
-- OPENAI_API_KEY=your_key_here
+OPENAI_API_KEY=your_key_here
 
-- LLM_PROVIDER= "openai" or "ollama"
+LLM_PROVIDER= "openai" or "ollama"
 
-- OLLAMA_HOST=http://localhost:11434
+OLLAMA_HOST=http://localhost:11434
 ```
 
 ---
 
 # Running the App
 
-- ```bash
+```bash
   cd src
-  ```
+```
 
-- ```bash
+```bash
   python main.py
-  ```
+```
 
--Gradio will start and print a local URL: Running on
+- Gradio will start and print a local URL: Running on
 
 ```text
 http://127.0.0.1:7860/
