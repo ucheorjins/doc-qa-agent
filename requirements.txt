@@ -1,0 +1,9 @@
+gradio
+numpy
+python-dotenv
+sentence-transformers
+scikit-learn
+pdfplumber
+python-docx
+openai
+ollama
